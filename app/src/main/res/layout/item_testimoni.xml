@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp" android:layout_height="wrap_content"
+    android:layout_margin="8dp" app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_testimoni_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengalaman saya selama kuliah di PEI saya mendapatkan ilmu yang saya sukai, seperti mendesain aplikasi dan pemrograman. Dengan metode pembelajaran yang lebih banyak praktek membuat saya tidak bosan belajar dikelas."
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:maxLines="6"
+            android:ellipsize="end"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_person_24" android:contentDescription="User Icon"
+                android:layout_marginEnd="8dp"/>
+            <TextView
+                android:id="@+id/tv_testimoni_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dina Armei - TRPL '21"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/logo" />
+            <!-- Konten Kompetensi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="327dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Untuk mendapatkan kompetensi dibawah, \n
+maka kamu akan belajar ini:"
+                    android:textAlignment="textEnd"
+                    android:textColor="#212121"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/gambar_cewe"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/cewe" />
+
+                <!--            <!- Wrapper untuk Accordion -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <!-- Header: Panel 1 -->
+                    <LinearLayout
+                        android:id="@+id/panel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp"
+                        android:gravity="center_vertical">'
+
+                        <TextView
+                            android:id="@+id/panel1Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kompetensi Utama"
+                            android:textColor="@color/black2" />
+
+                        <ImageView
+                            android:id="@+id/panel1Icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/logo_plus"
+                            android:contentDescription="Toggle Icon" />
+                    </LinearLayout>
+
+                    <!-- Isi Konten Accordion -->
+                    <LinearLayout
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_kompetensi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <!-- Header: Panel 2 -->
+                    <LinearLayout
+                        android:id="@+id/panel2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp"
+                        android:gravity="center_vertical">
+
+
+                        <TextView
+                            android:id="@+id/panel2Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kompetensi Pendukung"
+                            android:textColor="@color/black2" />
+
+                        <ImageView
+                            android:id="@+id/panel2Icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/logo_plus"
+                            android:contentDescription="Toggle Icon" />
+                    </LinearLayout>
+
+                    <!-- Isi Konten Accordion -->
+                    <LinearLayout
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_pendukung"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <!-- Header: Panel 3 -->
+                    <LinearLayout
+                        android:id="@+id/panel3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:background="@color/gray"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="16dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/panel3Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Kompetensi Lainnya"
+                            android:textColor="@color/black2" />
+
+                        <ImageView
+                            android:id="@+id/panel3Icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/logo_plus"
+                            android:contentDescription="Toggle Icon" />
+                    </LinearLayout>
+
+                    <!-- Isi Konten Accordion -->
+                    <LinearLayout
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#FFFFFF"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_lainnya"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--                topik 1-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik1"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_pc" />
+
+                        <TextView
+                            android:id="@+id/txtJudul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pengetahuan Dasar IT &amp; Programming"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pengantar Lunak Aplikasi; Pemrograman Dasar; Struktur Data; Pemrograman Berorientasi Objek; Sistem Basis Data; Sistem Operasi; Perancangan UI/UX."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 2-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/logo_android"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Android Programming"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Activity &amp; Intent; Layout; Style &amp; Theme; List &amp; Recycle View; Navigation; Background Process &amp; Networking; Restful API; ViewModel &amp; LiveData; Testing; Local Data Persistent; Background Task &amp; Schheduler; Basic Flutter."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:justificationMode="inter_word"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 3-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik3"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik3"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_java" />
+
+                        <TextView
+                            android:id="@+id/txtJudul3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Web Design &amp; Programming"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HTML; CSS; Java Script; Bootstrap; PHP; MySql; Laravel; Vue.JS/React.JS."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 4-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik4"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik4"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_cpu" />
+
+                        <TextView
+                            android:id="@+id/txtJudul4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cyber Security &amp; Computer Network"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Dasar Keamanan Komputer; Keamanan Perangkat Lunak; Keamanan Basis Data; Komunikasi Data &amp; Jaringan; Sistem Terdistribusi; Cloud Computing."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 5-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik5"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik5"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_window" />
+
+                        <TextView
+                            android:id="@+id/txtJudul5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rekayasa Perangkat Lunak"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pengantar Rekayasa Perangkat Lunak; Analisis &amp; Desain Perangkat Lunak; Pengujian Perangkat Lunak; Manajemen Proyek."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 6-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik6"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik6"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_kalkulator" />
+
+                        <TextView
+                            android:id="@+id/txtJudul6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Math &amp; Data Processing"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kalkulus; Aljabar Linear; Matematika Diskrit; Statistik; Data Mining."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 7-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik7"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik7"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_mic" />
+
+                        <TextView
+                            android:id="@+id/txtJudul7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Vocabulary; Reading; Speaking; Listening; Grammar; Writing; English fo Career; TOEIC."
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!--                topik 8-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTopik8"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/imgTopik8"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/logo_success" />
+
+                        <TextView
+                            android:id="@+id/txtJudul8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Success Skill"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/txtDeskripsi8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Teknik Presentasi; Manajemen kearsipan;Etika Profesi; Technopreneur; Magang/Internship; Tugas Akhir / Projek Akhir,"
+                            android:textSize="12sp"
+                            android:textColor="#444444"
+                            android:layout_marginTop="4dp"
+                            android:justificationMode="inter_word" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

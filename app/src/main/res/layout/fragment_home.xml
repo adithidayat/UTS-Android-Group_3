@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- Konten scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/logo"
+                />
+
+            <!-- Gambar dan Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/imageStudents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mahasiswa" />
+
+                <LinearLayout
+                    android:id="@+id/headerBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#AA207F5D"
+                    android:layout_margin="10dp"
+                    android:padding="16dp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TEKNOLOGI RPL\n[Informatika]"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wujudkan cita-citamu untuk menjadi Software Engineer yang dibutuhkan banyak industri dan memiliki gaji yang tinggi sesuai dengan permintaan."
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Visi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visi:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="“Menjadi pengembangan pendidikan vokasi terdepan dalam kawasan regional untuk komunitas industri guna memenuhi kebutuhan tenaga teknis yang kompeten di bidang Rekayasa Perangkat Lunak.”"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Misi -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Misi:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1) Menyelenggarakan Pendidikan vokasi untuk menghasilkan lulusan yang kompeten di bidang software engineering yang berkualitas dan mampu beradaptasi dengan perkembangan teknologi dan dunia industry.\n2) Melaksanakan penelitian untuk menghasilkan produk inovatif dan solusi di inovasi Rekayasa Perangkat Lunak sesuai dengan perkembangan zaman dan teknologi.\n3) Menyebarluaskan pengetahuan dan hasil penelitian kepada masyarakat luas untuk meningkatkan kualitas kehidupan."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                android:lineSpacingExtra="4dp"/>
+
+            <!-- Tujuan -->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tujuan:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_height="wrap_content"
+                android:text="1) Menghasilkan lulusan yang berkarakter dan berkualitas baik yang mampu bersaing di bidang teknologi dan berperan dalam industry.\n2) Menghasilkan inovasi Teknologi Rekayasa Perangkat Lunak terbaru dan dapat digunakan di berbagai bidang industry.\n3) Menghasilkan layanan dan dampak positif dari pengembangan inovasi teknologi rekayasa perangkat lunak kepada masyarakat umum."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:justificationMode="inter_word"
+                android:textAlignment="viewStart"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mitra kami"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="4dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Baris 1 -->
+                <LinearLayout
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/oracle" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/makaraui" />
+                </LinearLayout>
+
+                <!-- Baris 2 -->
+                <LinearLayout
+                    android:id="@+id/row2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bangkit" />
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="16dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dicoding" />
+                </LinearLayout>
+
+                <!-- Baris 3 (gambar terakhir, 1 gambar saja, rata tengah) -->
+                <LinearLayout
+                    android:id="@+id/row3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/redhat" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="4dp"
+                android:layout_weight="1"
+                android:backgroundTint="#159A84"
+                android:clipToPadding="false"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTintMode="src_in"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:clipChildren="false"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:id="@+id/ig_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_instagram"
+                    android:contentDescription="Instagram Logo"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/ig_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Info Kegiatan \nlainnya Follow\nIG TRPL"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teks_gabungan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:text="@string/teks_promosi_html" />
+
+            <LinearLayout
+                android:id="@+id/btn_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_button_blue"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:layout_marginTop="25dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_arrow_right"
+                    android:layout_marginEnd="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="Daftar Sekarang"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <!-- Judul Lokasi -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi kami:"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Alamat -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembangkuning, Ubrug, Jatiluhur,\nPurwakarta, Jawa Barat, Indonesia - 41152\nTelepon/WhatsApp:\n(+62 264) 830 1041\n(+62 264) 830 1042\n(+62 264) 830 1043\n+62 813-8192-6992"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Link lainnya -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Link lainnya:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-Learning\nE-Library\nIndorama Corp.\nE-Journal"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Sosial Media -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sosial Media:"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Icon Media Sosial -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_facebook"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Facebook" />
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_instagram"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Instagram" />
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_youtube"
+                        android:layout_margin="8dp"
+                        android:contentDescription="YouTube" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
